@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
- const useEffect = () => {
+ const FirstUseEffect = () => {
 
 const[num,setNum] = useState(0);
 const[number,setNumber] = useState(0);
@@ -36,4 +36,4 @@ useEffect (() => {
 )};
 
 
-export default UseEffect;
+export default FirstUseEffect;
