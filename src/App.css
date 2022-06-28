@@ -9,10 +9,16 @@
   margin-top: 150px;
   align-items: center;
  
+  
+
+ 
 }
-.main_div:hover{
+/* .main_div:hover{
   background-color:blanchedalmond;
-}
+  box-shadow: 30px 20px  ;
+  opacity: .5
+  ;
+} */
 .center_div{
   align-items: center;
   
@@ -40,9 +46,33 @@
   background-color:blueviolet;
   border-radius: 22px;
   border: 2px dotted black;
+
   
 }
-.wow:hover{cursor: pointer;
-  
+.wow:hover{
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+}
 
+.st_button{
+  background-color:hotpink ;
+
+}
+.nd_button{
+  background-color:hotpink ;
+}
+
+.all{
+  border: 2px solid black;
+  width: 300px;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  margin-left: 600px;
+}
+.ttoi{
+  margin-right: 100px;
+}
+.effect{
+  margin-top: 100px;
 }

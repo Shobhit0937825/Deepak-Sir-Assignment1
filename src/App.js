@@ -1,7 +1,9 @@
 import logo from './logo.svg';
-import React, {useState} from "react";
+import React, {useState, useEffect}  from "react";
 import './App.css';
 import TodoList from './Todo/TodoList';
+// import UseEffect from './Todo/UseEffect';
+
 
 function App() {
   const[inputList, setInputList] = useState("")
@@ -11,10 +13,14 @@ function App() {
     setInputList(event.target.value);
   };
   const listOfItem = () =>{
-    setItems((oldItems) => {
-      return[...oldItems, inputList]
-    });
+    // setItems((oldItems) => {
+    
+    //   return[...oldItems, inputList]
+    // });
+    Item.push(inputList);
+    setItems(Item)
     setInputList("")
+    localStorage.setItem('list',JSON.stringify(Item))
     
 
   }
@@ -26,9 +32,16 @@ function App() {
        });
     })
 }
-  
+
+
+
+  useEffect(() =>{
+    const DataFromLocalHost=localStorage.getItem('list')
+    const UseData =  DataFromLocalHost ? JSON.parse(DataFromLocalHost) : [setItems];
+    setItems( UseData);
+  },[])
   return (
-    
+    <div>
     <div className='main_div'>
       <div className='center_div'>
         <br></br>
@@ -50,10 +63,12 @@ function App() {
           }
         </ol>
       </div>
-       
-    
-    
     </div>
+    <div className='effect'>
+      
+    {/* <UseEffect/> */}
+  </div>
+  </div>
     
   );
 }
