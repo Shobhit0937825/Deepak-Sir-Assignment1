@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
- const UseEffect = () => {
+ const useEffect = () => {
 
 const[num,setNum] = useState(0);
 const[number,setNumber] = useState(0);
@@ -18,7 +18,7 @@ useEffect (() => {
 
   return(
     <div className='all'>
-        <h1>UseEffect</h1>
+        <h1 className='ttoi'>UseEffect</h1>
 
  <h2>Q- Capital of India</h2>
     <div >

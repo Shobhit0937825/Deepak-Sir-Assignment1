@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import React, {useState, useEffect}  from "react";
 import './App.css';
 import TodoList from './Todo/TodoList';
-// import UseEffect from './Todo/UseEffect';
+ import FirstUseEffect from './Todo/FirstUseEffect';
 
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
     </div>
     <div className='effect'>
       
-    {/* <UseEffect/> */}
+    { <FirstUseEffect/>}
   </div>
   </div>
     
